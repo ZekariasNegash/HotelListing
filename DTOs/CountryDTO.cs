@@ -22,4 +22,9 @@ namespace HotelListing.DTOs
         public string ShortName { get; set; }
     }
 
+    public class UpdateCountryDTO: CreateHotelDTO
+    {
+        public virtual IList<CreateHotelDTO> Hotels { get; set; }
+    }
+
 }
